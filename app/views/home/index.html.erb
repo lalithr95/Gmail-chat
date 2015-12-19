@@ -1,7 +1,7 @@
 <% @user.each_with_index  do |user, index| %>
 	<tr>
 		<td><%= index+1 %></td>
-		<td><%= @user.email %></td>
+		<td><%= user.name %></td>
 		<td>
 			<%= link_to "Send message", "#", class: 'btn btn-success btn-xs start-conversation', "data-sid" => current_user.id,
 				"data-rid" => user.id %>
