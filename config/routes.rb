@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  post 'conversations/create'
-
-  get 'conversations/show'
+  resources :conversations
 
   root 'home#index'
 
