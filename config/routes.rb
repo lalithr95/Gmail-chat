@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  post 'conversations/create'
+
+  get 'conversations/show'
+
   root 'home#index'
 
   devise_for :users
