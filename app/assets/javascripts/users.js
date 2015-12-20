@@ -29,5 +29,7 @@ var ready = function() {
 		var id = $(this).data('cid');
 		chatBox.close(id);
 	});
+
+	//
 };
 
