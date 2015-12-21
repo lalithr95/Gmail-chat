@@ -30,7 +30,12 @@ var ready = function() {
 		chatBox.close(id);
 	});
 
-	//
+	// open conversation
+	$('a.conversation').click(function (e) {
+		e.preventDefault();
+		var id = $(this).data('cid');
+		chatBox.chatWith(conversation_id);
+	});
 };
 
 $(document).ready(ready);
