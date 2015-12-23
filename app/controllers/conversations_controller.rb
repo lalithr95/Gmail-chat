@@ -9,12 +9,16 @@ class ConversationsController < ApplicationController
   	else
   		@conversation = Conversation.create!(conversation_params)
   	end
+
+    render json: {
+      conversation_id: @conversation.id
+    }
   end
 
   def show
     @conversation = Conversation.find(params[:id])
     @reciever = interlocutor(@conversation)
-    @messages = Conversation.messages
+    @messages = @conversation.messages
     @message = Message.new
   end
 
