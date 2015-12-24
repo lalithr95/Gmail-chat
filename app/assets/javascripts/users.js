@@ -30,6 +30,12 @@ var ready = function() {
 		chatBox.close(id);
 	});
 
+	$(document).on('keydown', '.chatboxtextarea', function (event) {
+
+        var id = $(this).data('cid');
+        chatBox.checkInputKey(event, $(this), id);
+    });
+
 	// open conversation
 	$('a.conversation').click(function (e) {
 		e.preventDefault();
