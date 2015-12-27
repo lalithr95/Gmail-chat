@@ -18,7 +18,7 @@ class ConversationsController < ApplicationController
   def show
     @conversation = Conversation.find(params[:id])
     @reciever = interlocutor(@conversation)
-    @messages = @conversation.messages
+    @messages = @conversation.messages.last(10)
     @message = Message.new
   end
 
