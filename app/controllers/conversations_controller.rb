@@ -18,7 +18,6 @@ class ConversationsController < ApplicationController
   def show
     @conversation = Conversation.find(params[:id])
     @reciever = interlocutor(@conversation)
-    @current_user_sha = Digest::MD5.hexdigest(current_user.email)
     @recipient_sha = Digest::MD5.hexdigest(@reciever.email)
     @messages = @conversation.messages.last(10)
     @message = Message.new

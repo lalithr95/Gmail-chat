@@ -3,11 +3,10 @@
 		<i class="fa fa-comments"></i>
 
 		<h2><%= @reciever.name %></h2>
-
 	</div>
 	<div class="chatboxoptions">
-		<%= link_to "<i class='fa fa-minus'></i>".html_safe, '#', class: 'toggleChatBox', 'data-cid' => @conversation.id %>
-		<%= link_to "<i class='fa fa-times'></i>".html_safe, '#', class: 'closeChat', 'data-cid' => @conversation.id %>
+		<%= link_to "<i class='glyphicon glyphicon-minus'></i>".html_safe, '#', class: 'toggleChatBox', 'data-cid' => @conversation.id %>
+		<%= link_to "<i class='glyphicon glyphicon-remove'></i>".html_safe, '#', class: 'closeChat', 'data-cid' => @conversation.id %>
 	</div>
 </div>
 <div class="chatboxcontent">

@@ -1,10 +1,13 @@
-<% @user.each_with_index  do |user, index| %>
-	<tr>
-		<td><%= index+1 %></td>
-		<td><%= user.name %></td>
-		<td>
-			<%= link_to "Send message", "#", class: 'btn btn-success btn-xs start-conversation', "data-sid" => current_user.id,
-				"data-rid" => user.id %>
-		</td>
-	</tr>
-<% end %>
+<div class="col-md-3">
+	<ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+		<li role="presentation" class="active"><a>Messages</a></li>
+		<% @user.each do |user| %>
+			<li role="presentation">
+				<%= link_to user.name, "#", class: 'btn btn-success btn-xs start-conversation', "data-sid" => current_user.id,
+					"data-rid" => user.id %>
+			</li>
+		<% end %>
+	</ul>
+</div>
+<div class="col-md-7 show-conversation">
+</div>
