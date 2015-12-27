@@ -12,7 +12,7 @@
 }
 
 .chatboxhead {
-    background: #666;
+    background: #4e69a2;
     color: white;
     padding: 0.5rem;
     overflow: hidden;
@@ -21,10 +21,10 @@
     border-left: 1px solid rgba(85, 85, 85, 0.87);
 }
 
-.chatboxhead h1 {
+.chatboxhead h2 {
     display: inline;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .chatboxblink {
@@ -136,11 +136,11 @@
 }
 
 .chatboxtextarea {
-    width: 262px;
-    height: 44px;
-    padding: 3px 0pt 3px 3px;
-    border: 1px solid #eeeeee;
-    margin: 1px;
+    width: 264px;
+    height: 45px;
+    padding: 0px 0pt 3px 3px;
+    border: 0px solid #ffffff;
+    margin: 0px;
     overflow: hidden;
     resize: none !important;
 }
