@@ -105,6 +105,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    newrelic_rpm (3.14.0.305)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
@@ -200,6 +201,7 @@ DEPENDENCIES
   devise (~> 3.5, >= 3.5.3)
   jbuilder (~> 2.0)
   jquery-rails
+  newrelic_rpm
   pg
   private_pub
   puma
