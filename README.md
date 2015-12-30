@@ -1,4 +1,4 @@
-# Gmail-chat
+# Chat application with Rails
 Rails app which replicates the functionality of chat box in Google+
 
 1. Clone URL
