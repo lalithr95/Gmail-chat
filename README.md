@@ -1,5 +1,5 @@
 # Chat application with Rails
-Rails app which replicates the functionality of chat box in Google+
+Rails app which replicates the functionality of inline chat box
 
 1. Clone URL
 2. rake db:create
