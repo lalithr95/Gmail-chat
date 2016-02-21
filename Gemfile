@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.2.5'
+gem 'rails', '~> 4.2.5.1'
 
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
@@ -20,7 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise', '~> 3.5', '>= 3.5.3'
+gem 'devise', '>= 3.5.4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,3 +39,5 @@ group :development do
   gem 'spring'
 end
 
+gem 'nokogiri', '>= 1.6.7.2'
+gem 'rails-html-sanitizer', '~> 1.0.3'
